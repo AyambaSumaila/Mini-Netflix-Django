@@ -24,13 +24,14 @@ authorization, permissions, foreign keys, and more.
 - **Add Reviews**: Users can leave detailed reviews and rate movies based on their experience.
 - **Watch Again Indicator**: A unique feature that allows users to mark movies they would like to watch again.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
-![](images/screenshot.png)
 ![](images/screenshot_2.png)
 ![](images/screenshot_3.png)
 ![](images/screenshot_4.png)
 ![](images/screenshot_5.png)
 ![](images/screenshot_6.png)
 ![](images/screenshot_7.png)
+![](images/screenshot.png)
+
 
 ## Technologies Used
 
