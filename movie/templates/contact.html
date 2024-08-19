@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--carousel section-->
+
+  {% load static %}
+
+<!--carousel section-->
+<div class="container mt-5">
+    <div class="contact-us-page">
+        <h1>Contact Us</h1>
+        
+        <p>We’d love to hear from you! Whether you have feedback, questions, or just want to say hello, feel free to reach out. Our team is here to assist you and ensure your experience with Movie Reviewer is as smooth and enjoyable as possible.</p>
+        
+        <h2>How to Get in Touch</h2>
+        
+        <ul>
+          <li><strong>Email:</strong> Reach us at <a href="mailto:support@moviereviewer.com">support@moviereviewer.com</a> for any inquiries, suggestions, or support.</li>
+          <li><strong>Phone:</strong> Call us at <a href="tel:+233551044362">+233551044362</a> from Monday to Friday, 9 AM to 5 PM (EST).</li>
+          <li><strong>Live Chat:</strong> Use our live chat feature available on the bottom right corner of the page for instant support.</li>
+          <li><strong>Social Media:</strong> Follow and message me on our social media channels:
+            <ul>
+              <li><a href="https://facebook.com/moviereviewer" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com/moviereviewer" target="_blank">Twitter</a></li>
+              <li><a href="https://instagram.com/moviereviewer" target="_blank">Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <h2>Our Location</h2>
+        <p>Visit us at:</p>
+        <address>
+          Movie Reviewer Inc.<br>
+          12 Saflo Street, Abelemkpe Accra<br>
+          Movietown, SB<br>
+          Ghana 
+        </address>
+        
+        <h2>Feedback</h2>
+        <p>Your opinions matter to us! If you have any feedback on how we can improve Movie Reviewer, please don’t hesitate to let us know. We’re constantly working to enhance our platform and make it better for our users.</p>
+        
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates, news, and special offers directly to your inbox. Just enter your email below:</p>
+        
+        <form action="/subscribe" method="post" class="form-control ">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="text">Leave a message</label><br>
+          <textarea name="text" required></textarea><br><br>
+
+          <input type="submit" value="Subscribe" class="accordion-button">
+        </form>
+        
+        <p>Thank you for being part of the Movie Reviewer community. We look forward to hearing from you!</p>
+      </div>
+      
+
+</div>
+
+{% endblock %}
