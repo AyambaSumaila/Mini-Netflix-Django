@@ -11,11 +11,11 @@ authorization, permissions, foreign keys, and more.
 
 
 
-# Movie Minder
+# Mini Netflix
 
 ## Overview
 
-**Movie Minder** is a Django-based web application designed for movie enthusiasts to search, review, and track movies they’ve watched. Users can sign up, search for movies by title, add detailed reviews, and indicate whether they would like to watch the movie again. This application provides a simple, intuitive interface for users to manage their movie experiences and share their opinions with others.
+**Mini Netflix** is a Django-based web application designed for movie enthusiasts to search, review, and track movies they’ve watched. Users can sign up, search for movies by title, add detailed reviews, and indicate whether they would like to watch the movie again. This application provides a simple, intuitive interface for users to manage their movie experiences and share their opinions with others.
 
 ## Features
 
