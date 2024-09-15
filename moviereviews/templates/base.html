@@ -19,20 +19,22 @@
         transition: all 0.3s ease;
         
       }
-      .hover::hover {
-        background-color: white;
+    
+      .mini{
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        font-size: 5px;
       }
     </style>
       <!-- Include Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
  </head>
   <header>
-    <nav class="navbar navbar-expand-lg   pt-2 bg-dark nav-me  text-danger">        
+    <nav class="navbar navbar-expand-lg   pt-2 bg-black nav-me ">        
       <div class="container " style=" font-weight: bold">
          <a class="navbar-brand text-decoration-none" href="{% url 'home' %}">
           {% load static %}
             <img class="rounded" src="{% static 'images/brand.png' %} " alt="" width="30" height="24" class="d-inline-block align-text-top"/>
-          <p style="text-decoration:none; font-weight: bold;" class="text-danger fs-4">Mini Netflix</p>
+          <p style="text-decoration:none; font-weight: bold;" class=" fs-4 mini  text-uppercase">Mini Netflix</p>
          </a>
          <button class="navbar-toggler" type="button"
           data-bs-toggle="collapse"
