@@ -17,6 +17,49 @@ authorization, permissions, foreign keys, and more.
 
 **Mini Netflix** is a Django-based web application designed for movie enthusiasts to search, review, and track movies they’ve watched. Users can sign up, search for movies by title, add detailed reviews, and indicate whether they would like to watch the movie again. This application provides a simple, intuitive interface for users to manage their movie experiences and share their opinions with others.
 
+
+UML diagrams (class diagram and sequence diagram) for a Django full-stack web application with features such as a home page, login, signup, contact us, movie search, and review system, we can break down the system into different components.
+UML Class Diagram
+Key Classes:
+
+   ### User
+        Attributes: username, password, email
+        Methods: login(), signup(), logout()
+
+   ### Movie
+        Attributes: title, genre, release_date, rating
+        Methods: search_movie(), get_details()
+
+   ### Review
+        Attributes: user_id, movie_id, review_text, rating
+        Methods: add_review(), edit_review(), delete_review()
+
+   ### Contact
+        Attributes: name, email, message
+        Methods: send_message()
+
+   ### AuthenticationService
+        Methods: authenticate(), register_user(), authorize_user()
+
+   ### MovieService
+        Methods: get_movies(), search_movies(), add_review()
+
+   ### ReviewService
+        Methods: create_review(), update_review(), delete_review()
+
+## UML Sequence Diagram
+### Scenario: User Logs In and Posts a Review for a Movie
+
+    User: Initiates login
+    AuthenticationService: Verifies user credentials
+    User: After successful login, searches for a movie
+    MovieService: Fetches the list of movies based on the search criteria
+    User: Selects a movie and adds a review
+    ReviewService: Adds the review to the database
+
+
+![](images/uml.webp)
+
 ## Features
 
 - **User Authentication**: Secure user sign-up and login system to personalize movie experiences.
@@ -25,6 +68,14 @@ authorization, permissions, foreign keys, and more.
 - **Watch Again Indicator**: A unique feature that allows users to mark movies they would like to watch again.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 ![](images/screenshot_2.png)
+![](images/screenshot.png)
+![](images/screenshot3.png)
+![](images/screenshot5.png)
+
+![](images/screenshot3.png)
+
+![](images/screenshot_2.png)
+
 ![](images/screenshot_3.png)
 ![](images/screenshot_4.png)
 ![](images/screenshot_5.png)
