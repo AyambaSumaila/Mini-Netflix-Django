@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "Ayamba",
+        "createreview",
+        "deletereview",
+        "endfor",
+        "loginaccount",
+        "logoutaccount",
+        "Miniflix",
+        "moviereviews",
+        "signupaccount",
+        "stylesheet",
+        "Sumaila",
+        "updatereview",
+        "vercel"
+    ],
+    "cSpell.enableFiletypes": [
+        "django-html"
+    ]
+}
