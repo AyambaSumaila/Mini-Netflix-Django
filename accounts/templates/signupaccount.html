@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="card mb-3">
+
+<br><br>
+<div class="card mb-3 container pt-5">
   <div class="row g-0">
     <div>
       <div class="card-body">
-        <h5 class="card-title">Sign Up</h5>
+        <h5 class="card-title  text-center text-dark">Sign Up</h5>
         {% if error %}
         <div class="alert alert-danger mt-3" role="alert">
           {{ error }}

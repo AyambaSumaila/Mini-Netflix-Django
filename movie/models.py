@@ -16,6 +16,8 @@ class Movie(models.Model):
         return self.title
 
 
+
+
 #Review mode
 class Review(models.Model):
     text=models.CharField(max_length=100)
@@ -27,3 +29,6 @@ class Review(models.Model):
     #String representation of the text field    
     def __str__(self):        
         return self.text
+    
+    
+    

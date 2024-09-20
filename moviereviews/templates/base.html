@@ -24,17 +24,34 @@
         font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
         font-size: 5px;
       }
+    
+      .honer:hover{
+        
+        background-color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+      .honer{
+        border-radius: 0%;       
+
+      }
+      
+    
     </style>
       <!-- Include Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
  </head>
   <header>
-    <nav class="navbar navbar-expand-lg   pt-2 bg-black nav-me ">        
+    <nav class="navbar navbar-expand-lg   pt-2 bg-black nav-me">        
       <div class="container " style=" font-weight: bold">
-         <a class="navbar-brand text-decoration-none" href="{% url 'home' %}">
+         <a class="navbar-brand text-decoration-none text-danger" href="{% url 'home' %}">
           {% load static %}
             <img class="rounded" src="{% static 'images/brand.png' %} " alt="" width="30" height="24" class="d-inline-block align-text-top"/>
-          <p style="text-decoration:none; font-weight: bold;" class=" fs-4 mini  text-uppercase">Mini Netflix</p>
+          <p class=" fs-4 mini  text-uppercase honer rounded">Mini Netflix</p>
          </a>
          <button class="navbar-toggler" type="button"
           data-bs-toggle="collapse"
@@ -46,19 +63,19 @@
           </button>
           <div class="collapse navbar-collapse"
           id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto text-decoration-none hover">
-          <a class="nav-link  fs-4 text-danger" href="{% url 'news' %}">News</a> 
-          <a class="nav-link  fs-4 text-danger" href="{% url 'about' %}">About</a> 
-          <a class="nav-link fs-4 text-danger" href="{% url 'contact' %}">Contact Us</a> 
+          <div class="navbar-nav ms-auto text-decoration-none">
+          <a class="nav-link  fs-4 text-danger honer rounded" href="{% url 'news' %}">News</a> 
+          <a class="nav-link  fs-4 text-danger honer rounded" href="{% url 'about' %}">About</a> 
+          <a class="nav-link fs-4 text-danger honer rounded" href="{% url 'contact' %}">Contact Us</a> 
 
           {% if user.is_authenticated %}
-            <a class="nav-link fs-4 text-danger" href="{% url 'logoutaccount' %}">
+            <a class="nav-link fs-4 text-danger honer rounded" href="{% url 'logoutaccount' %}">
               Logout Hi {{ user.username }}!
             </a>
 
           {% else %}
-            <a class="nav-link fs-4 text-danger" href="{% url 'loginaccount' %}">Login</a> 
-            <a class="nav-link fs-4 text-danger" href="{% url 'signupaccount' %}">Sign Up</a>
+            <a class="nav-link fs-4 text-danger honer rounded" href="{% url 'loginaccount' %}">Login</a> 
+            <a class="nav-link fs-4 text-danger honer rounded" href="{% url 'signupaccount' %}">Sign Up</a>
           {% endif %}
 
           </div>
@@ -71,8 +88,11 @@
           {% block content %}
           {% endblock content %}
         </div>
-      <footer class="text-decoration-none pt-4">
-      <div class="card text-center bg-dark text-light">     
+
+
+
+      <footer class="text-decoration-none pt-2 mt-3 text-center">
+      <div class="card text-left bg-dark text-light">     
       <div class="card-body">     
       <div class="card-footer text-body-secondary">
        <ul style="list-style-type:none" class="container"> 
@@ -84,25 +104,31 @@
        </ul>
       </div>
     </div> 
+
+
     
-    <div class="container">
+    
+    <div class="container text-center ">
       <ul style="list-style-type: none;">
         <p>
           <a class="fs-5 text-reset fw-bold text-decoration-none" href="#">Social Media</a>
         </p>
-        <a href="https://api.iconify.design/fa:facebook-official.svg?color=%231c71d8" class="text-white fs-4" style="font-style: bold;">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
+        <a href="https://api.iconify.design/fa:facebook-official.svg?color=%231c71d8" class="text-decoration-none text-white fs-4" style="font-style: bold;">
+          <i class="fa fa-facebook text-decoration-none " aria-hidden="true">Facebook</i>
         </a>
-        <a href="#" class="text-white fs-4">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <a href="#" class="text-white fs-4 text-decoration-none">
+          <i class="fa fa-linkedin" aria-hidden="true">Linkedin</i>
         </a>
-        <a href="#" class="text-white fs-4">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
+        <a href="#" class="text-white fs-4 text-decoration-none">
+          <i class="fa fa-instagram " aria-hidden="true">Youtube</i>
         </a>
       </ul>
     </div>
     
     </footer>
+    <script src="static/js/main.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

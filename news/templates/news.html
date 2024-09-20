@@ -3,12 +3,16 @@
 {% extends 'base.html' %}
 {% block content %} 
 
+<h3 class="container pt-3 mt-3 text-center">Latest Tech News</h3>
+
+
 {% for news in newss %}
-<div class="card mb-3">
+
+<div class="card mb-3 container pt-3 mt-5">
   <div class="row g-0">
     <div>
       <div class="card-body">
-        <h5 class="card-title">{{ news.headline }}</h5>
+        <a class="container text-decoration-none"><h5 class="card-title">{{ news.headline }}</h5></a>
         <p class="card-text">{{ news.body }}</p>
         <p class="card-text">
           <small class="text-muted"> {{ news.date }} </small>
