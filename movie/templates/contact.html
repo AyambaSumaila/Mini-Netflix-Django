@@ -4,17 +4,17 @@
 <!--carousel section-->
 
   {% load static %}
-
+<div class="bg-white ">
 <!--carousel section-->
 <div class="container mt-5">
     <div class="contact-us-page">
         <h1>Contact Us</h1>
         
-        <p>We’d love to hear from you! Whether you have feedback, questions, or just want to say hello, feel free to reach out. Our team is here to assist you and ensure your experience with Movie Reviewer is as smooth and enjoyable as possible.</p>
+        <p class="container fs-5">We’d love to hear from you! Whether you have feedback, questions, or just want to say hello, feel free to reach out. Our team is here to assist you and ensure your experience with Movie Reviewer is as smooth and enjoyable as possible.</p>
         
         <h2>How to Get in Touch</h2>
         
-        <ul>
+        <ul class="container  fs-5">
           <li><strong>Email:</strong> Reach us at <a href="mailto:support@moviereviewer.com">support@moviereviewer.com</a> for any inquiries, suggestions, or support.</li>
           <li><strong>Phone:</strong> Call us at <a href="tel:+233551044362">+233551044362</a> from Monday to Friday, 9 AM to 5 PM (EST).</li>
           <li><strong>Live Chat:</strong> Use our live chat feature available on the bottom right corner of the page for instant support.</li>
@@ -37,11 +37,12 @@
         </address>
         
         <h2>Feedback</h2>
-        <p>Your opinions matter to us! If you have any feedback on how we can improve Movie Reviewer, please don’t hesitate to let us know. We’re constantly working to enhance our platform and make it better for our users.</p>
+        <div class="container">
+        <p >Your opinions matter to us! If you have any feedback on how we can improve Movie Reviewer, please don’t hesitate to let us know. We’re constantly working to enhance our platform and make it better for our users.</p>
         
         <h2>Stay Updated</h2>
         <p>Subscribe to our newsletter for the latest updates, news, and special offers directly to your inbox. Just enter your email below:</p>
-        
+        </div>
         <form action="/subscribe" method="post" class="form-control ">
           <label for="email">Email:</label><br>
           <input type="email" id="email" name="email" required><br><br>
@@ -56,5 +57,5 @@
       
 
 </div>
-
+</div>
 {% endblock %}

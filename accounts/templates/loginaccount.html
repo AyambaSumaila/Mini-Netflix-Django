@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="bg-white mb-5 pb-5 fs-3">
 <br><br>
-<h5 class="container text-center text-dark">Please Login</h5>
+<h5 class="container text-center text-dark ">Please Login</h5>
 
 <div class="card mb-3 text-center container mt-5">
   <div class="row g-0">
@@ -17,7 +18,7 @@
             {% csrf_token %}
           
             {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary buttom">
               Login
             </button>
           </form>
@@ -25,5 +26,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 {% endblock content %}

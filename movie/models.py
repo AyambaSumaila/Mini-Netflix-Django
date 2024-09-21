@@ -6,7 +6,8 @@ from django.contrib.auth.models import User
 #Movie model
 class Movie(models.Model):
     title=models.CharField(max_length=100)
-    description=models.CharField(max_length=100)
+    
+    description=models.CharField(max_length=100, blank=True)
     image=models.ImageField(upload_to='movie/images/')
     url=models.URLField()
 

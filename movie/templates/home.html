@@ -41,8 +41,10 @@
     </button>
   </div>
 </div>
+
+
 <!--carousel section-->
-<div class="mt-4 bg-dark mx-4">
+<div class="mt-4 bg-black mx-4">
 <form action="">
   <div class="mb-3">
       <div class="container text-white fs-4 pt-3">      
@@ -72,20 +74,21 @@
       loop:true
     });
   </script>
-<h3 class="container text-white bg-black">Action movies</h3>
+<h3 class="container text-white">Action movies</h3>
 </div>
-<div class="row row-cols-1 row-cols-md-5 g-3">
+<div class="row row-cols-1 row-cols-md-5 g-5 ">
   {% for movie in movies %}
       <div class="col">
-      <div class="card card-2">
-        <img class="card-img-top" src="{{ movie.image.url }}" />
-        <div class="card-body">
-          <a href="{% url 'detail' movie.id %}">
-          <p class="card-title fw-bold link-primary ">{{ movie.title }}</p>
+      <div class="card card-2 bg-black" style="width: 20rem;">
+        <img class="card-img-top " src="{{ movie.image.url }}" />
+        <div class="card-body" style="width: 18rem; height:10rem;">
+          <a class="text-decoration-none more2 fs-5" href="{% url 'detail' movie.id %}">
+          <p class="card-title fw-bold ">{{ movie.title }}</p>
           </a>
-          <p class="card-text">{{ movie.description }}</p>
+
+          <p class="card-text text-white">{{ movie.description }}</p>          
           {% if movie.url %}
-          <a href="{{ movie.url }}" class="btn btn-primary bg-danger"> Movie Link </a>
+          <div class="container "><a href="{{ movie.url }} " class="text-decoration-none fw-bold more fs-4">More</a></div>
           {% endif %}
         </div>
       </div>

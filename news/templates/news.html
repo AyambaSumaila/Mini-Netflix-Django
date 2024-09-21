@@ -2,12 +2,9 @@
 
 {% extends 'base.html' %}
 {% block content %} 
-
+<div class="bg-white">
 <h3 class="container pt-3 mt-3 text-center">Latest Tech News</h3>
-
-
 {% for news in newss %}
-
 <div class="card mb-3 container pt-3 mt-5">
   <div class="row g-0">
     <div>
@@ -23,6 +20,7 @@
 </div>
 {% endfor %} 
 
+</div>
 
 {% endblock content %}
 

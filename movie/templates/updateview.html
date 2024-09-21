@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="card mb-3">
+<div class="white">
+<div class="card mb-3 pb-3 container">
 <div class="row g-0">
 <div>
-<div class="card-body">
+<div class="card-body pb-6">
 <h5 class="card-title"> Update Review for {{ review.movie.title }}</h5>
     {% if error %}
         <div class="alert alert-danger mt-3" role="alert">{{ error }}</div>  
@@ -20,5 +21,6 @@
     </div>
 </div>
 
+</div>
 </div>
 {% endblock content %}
