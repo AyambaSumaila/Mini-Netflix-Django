@@ -25,14 +25,24 @@ authorization, permissions, foreign keys, and more.
 - **Watch Again Indicator**: A unique feature that allows users to mark movies they would like to watch again.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
-![](images/screenshot_3.png)
-![](images/screenshot.png)
-![](images/screenshot_4.png)
-![](images/screenshot_5.png)
-![](images/screenshot_6.png)
-![](images/screenshot_7.png)
+![](images/Screenshot_3.png)
+![](images/Screenshot.png)
+![](images/Screenshot_4.png)
+![](images/Screenshot_5.png)
+![](images/Screenshot_6.png)
+![](images/Screenshot_7.png)
+![](images/Screenshot_8.png)
+![](images/Screenshot_9.png)
+![](images/Screenshot_0.png)
+![](images/Screenshot_02.png)
+![](images/Screenshot_01.png)
+![](images/Screenshot_03.png)
 
-![](images/screenshot_2.png)
+
+
+
+
+![](images/Screenshot_2.png)
 
 
 ## Technologies Used
