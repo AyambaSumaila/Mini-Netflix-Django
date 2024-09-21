@@ -14,4 +14,8 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'moviereviews.settings')
 
 application = get_wsgi_application()
+<<<<<<< HEAD
 app = application
+=======
+app = application
+>>>>>>> f7c88a59009f52b290efdd2b63881f4a550e6986
