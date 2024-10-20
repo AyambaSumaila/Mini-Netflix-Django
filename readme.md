@@ -91,7 +91,7 @@ authorization, permissions, foreign keys, and more.
 - **User-Centric Design**: Focuses on user experience with a responsive design, making it accessible on all devices.
 - **SEO Optimization**: Incorporates best SEO practices to ensure the application can be easily discovered by users and search engines alike.
 
-### Why It Matters to Recruiters
+### Why It Matters
 
 - **Technical Competence**: Demonstrates proficiency in Django, Python, and web development fundamentals.
 - **Problem Solving**: Addresses real-world problems like movie discovery and review management in a user-friendly way.
@@ -105,8 +105,4 @@ We welcome contributions! Please fork this repository and submit a pull request 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This README template provides a comprehensive overview of your application while highlighting the technical skills and best practices that might attract recruiters.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
